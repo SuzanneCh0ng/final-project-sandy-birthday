@@ -1,0 +1,111 @@
+body {
+  font-family: helvetica, sans-serif;
+  margin: 1rem 2rem;
+
+  color: rgb(30, 30, 30);
+  background-color: rgb(249, 249, 249);
+}
+
+body.darkmode {
+  color: rgb(249, 249, 249);
+  background-color: rgb(30, 30, 30);
+}
+
+.darkmode a:link,
+.darkmode a:visited,
+.darkmode a:hover,
+.darkmode a:active {
+  color: rgb(128, 159, 255);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: rgb(0, 50, 255);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.badge {
+  width: 150px;
+  float: right;
+  margin-left: 1rem;
+}
+
+section {
+  clear: both;
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+section h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+main {
+  clear: both;
+}
+
+footer {
+  margin: 2rem 0;
+}
+
+#btn-mode {
+  float: right;
+}
+
+.columns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.columns a {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  /* Inherit text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.columns a.darkmode {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  /* Inherit text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.columns a svg {
+  width: 230px;
+  height: 230px;
+  stroke: black;
+}
+
+.columns a.darkmode svg {
+  width: 230px;
+  height: 230px;
+  fill: white;
+  stroke: white;
+}
